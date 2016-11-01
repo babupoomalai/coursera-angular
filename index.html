@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="demoApp">
   <head>
     <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <title>Hello Coursera</title>
   </head>
   <body>
     <h1>Coursera Heading its the start</h1>
+    <div ng-controller="demoController">
+    {{name}}<br/>
+    <input type="textbox" ng-model="name"
+    ng-keyup="displayResult();">
+    Result is {{result}}
+    </div>
   </body>
 </html>
